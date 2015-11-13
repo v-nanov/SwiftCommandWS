@@ -17,7 +17,14 @@
 		ED4DC8FD1BF2D771006B3B69 /* SwiftyJSON.framework in Resources */ = {isa = PBXBuildFile; fileRef = ED4DC8FB1BF2D750006B3B69 /* SwiftyJSON.framework */; };
 		ED4DC8FE1BF2D771006B3B69 /* Starscream.framework in Resources */ = {isa = PBXBuildFile; fileRef = ED4DC8F91BF2D741006B3B69 /* Starscream.framework */; };
 		ED4DC9201BF2E386006B3B69 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC90E1BF2E26E006B3B69 /* CryptoSwift.framework */; };
-		ED4DC9231BF2E438006B3B69 /* SwiftEventEmitter in Resources */ = {isa = PBXBuildFile; fileRef = ED4DC9221BF2E438006B3B69 /* SwiftEventEmitter */; };
+		ED4DC94A1BF2E5D7006B3B69 /* SwiftyJSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC8FB1BF2D750006B3B69 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ED4DC94B1BF2E5D7006B3B69 /* Starscream.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC8F91BF2D741006B3B69 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ED4DC94C1BF2E5D7006B3B69 /* EventEmitter.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC9471BF2E596006B3B69 /* EventEmitter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ED4DC94D1BF2E5D7006B3B69 /* CryptoSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC90E1BF2E26E006B3B69 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ED4DC94E1BF2E5D7006B3B69 /* CryptoSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC9141BF2E26E006B3B69 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ED4DC94F1BF2E5D7006B3B69 /* CryptoSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC9101BF2E26E006B3B69 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ED4DC9501BF2E5D7006B3B69 /* CryptoSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC9121BF2E26E006B3B69 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ED4DC9521BF56EBB006B3B69 /* EventEmitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC9471BF2E596006B3B69 /* EventEmitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +70,55 @@
 			remoteGlobalIDString = 754BE46019693E190098E6F3;
 			remoteInfo = CryptoSwiftTests;
 		};
+		ED4DC9461BF2E596006B3B69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED4DC9411BF2E595006B3B69 /* EventEmitter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EDF6EB541BCC29DD00424B30;
+			remoteInfo = EventEmitter;
+		};
+		ED4DC9481BF2E596006B3B69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED4DC9411BF2E595006B3B69 /* EventEmitter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EDF6EB5E1BCC29DE00424B30;
+			remoteInfo = EventEmitterTests;
+		};
+		ED4DC9531BF5798C006B3B69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED4DC9051BF2E26D006B3B69 /* CryptoSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 754BE45419693E190098E6F3;
+			remoteInfo = "CryptoSwift iOS";
+		};
+		ED4DC9551BF57992006B3B69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED4DC9411BF2E595006B3B69 /* EventEmitter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EDF6EB531BCC29DD00424B30;
+			remoteInfo = EventEmitter;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ED4DC9251BF2E530006B3B69 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ED4DC94A1BF2E5D7006B3B69 /* SwiftyJSON.framework in Copy Frameworks */,
+				ED4DC94B1BF2E5D7006B3B69 /* Starscream.framework in Copy Frameworks */,
+				ED4DC94C1BF2E5D7006B3B69 /* EventEmitter.framework in Copy Frameworks */,
+				ED4DC94D1BF2E5D7006B3B69 /* CryptoSwift.framework in Copy Frameworks */,
+				ED4DC94E1BF2E5D7006B3B69 /* CryptoSwift.framework in Copy Frameworks */,
+				ED4DC94F1BF2E5D7006B3B69 /* CryptoSwift.framework in Copy Frameworks */,
+				ED4DC9501BF2E5D7006B3B69 /* CryptoSwift.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ED4DC8D91BF2D21B006B3B69 /* SwiftCommandWS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCommandWS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,7 +132,7 @@
 		ED4DC8F91BF2D741006B3B69 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 		ED4DC8FB1BF2D750006B3B69 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		ED4DC9051BF2E26D006B3B69 /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = CryptoSwift/CryptoSwift.xcodeproj; sourceTree = SOURCE_ROOT; };
-		ED4DC9221BF2E438006B3B69 /* SwiftEventEmitter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SwiftEventEmitter; sourceTree = SOURCE_ROOT; };
+		ED4DC9411BF2E595006B3B69 /* EventEmitter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EventEmitter.xcodeproj; path = CryptoSwift/../SwiftEventEmitter/EventEmitter.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +143,7 @@
 				ED4DC9201BF2E386006B3B69 /* CryptoSwift.framework in Frameworks */,
 				ED4DC8FC1BF2D750006B3B69 /* SwiftyJSON.framework in Frameworks */,
 				ED4DC8FA1BF2D741006B3B69 /* Starscream.framework in Frameworks */,
+				ED4DC9521BF56EBB006B3B69 /* EventEmitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +181,7 @@
 		ED4DC8DB1BF2D21B006B3B69 /* SwiftCommandWS */ = {
 			isa = PBXGroup;
 			children = (
-				ED4DC9221BF2E438006B3B69 /* SwiftEventEmitter */,
+				ED4DC9411BF2E595006B3B69 /* EventEmitter.xcodeproj */,
 				ED4DC9051BF2E26D006B3B69 /* CryptoSwift.xcodeproj */,
 				ED4DC8F31BF2D2E1006B3B69 /* CommandWS.swift */,
 				ED4DC8F41BF2D2E1006B3B69 /* Command.swift */,
@@ -156,6 +212,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		ED4DC9421BF2E595006B3B69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED4DC9471BF2E596006B3B69 /* EventEmitter.framework */,
+				ED4DC9491BF2E596006B3B69 /* EventEmitterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -178,10 +243,13 @@
 				ED4DC8D51BF2D21B006B3B69 /* Frameworks */,
 				ED4DC8D61BF2D21B006B3B69 /* Headers */,
 				ED4DC8D71BF2D21B006B3B69 /* Resources */,
+				ED4DC9251BF2E530006B3B69 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ED4DC9561BF57992006B3B69 /* PBXTargetDependency */,
+				ED4DC9541BF5798C006B3B69 /* PBXTargetDependency */,
 			);
 			name = SwiftCommandWS;
 			productName = SwiftCommandWS;
@@ -239,6 +307,10 @@
 					ProductGroup = ED4DC9061BF2E26D006B3B69 /* Products */;
 					ProjectRef = ED4DC9051BF2E26D006B3B69 /* CryptoSwift.xcodeproj */;
 				},
+				{
+					ProductGroup = ED4DC9421BF2E595006B3B69 /* Products */;
+					ProjectRef = ED4DC9411BF2E595006B3B69 /* EventEmitter.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -284,6 +356,20 @@
 			remoteRef = ED4DC9151BF2E26E006B3B69 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		ED4DC9471BF2E596006B3B69 /* EventEmitter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = EventEmitter.framework;
+			remoteRef = ED4DC9461BF2E596006B3B69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ED4DC9491BF2E596006B3B69 /* EventEmitterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = EventEmitterTests.xctest;
+			remoteRef = ED4DC9481BF2E596006B3B69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -293,7 +379,6 @@
 			files = (
 				ED4DC8FD1BF2D771006B3B69 /* SwiftyJSON.framework in Resources */,
 				ED4DC8FE1BF2D771006B3B69 /* Starscream.framework in Resources */,
-				ED4DC9231BF2E438006B3B69 /* SwiftEventEmitter in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +416,16 @@
 			isa = PBXTargetDependency;
 			target = ED4DC8D81BF2D21B006B3B69 /* SwiftCommandWS */;
 			targetProxy = ED4DC8E51BF2D21B006B3B69 /* PBXContainerItemProxy */;
+		};
+		ED4DC9541BF5798C006B3B69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CryptoSwift iOS";
+			targetProxy = ED4DC9531BF5798C006B3B69 /* PBXContainerItemProxy */;
+		};
+		ED4DC9561BF57992006B3B69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EventEmitter;
+			targetProxy = ED4DC9551BF57992006B3B69 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

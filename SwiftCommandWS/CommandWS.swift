@@ -9,6 +9,7 @@
 import Foundation
 import Starscream
 import SwiftyJSON
+import EventEmitter
 
 class CommandWS : EventEmitter {
     let socket  : WebSocket
@@ -20,7 +21,9 @@ class CommandWS : EventEmitter {
     }
     
     init(url: NSURL) {
-        super.init(socket = WebSocket(url: url))
+
+        socket = WebSocket(url: url)
+        super.init()
 
         socket.onConnect = {
             print("websocket is connected")
