@@ -25,6 +25,7 @@
 		ED4DC94F1BF2E5D7006B3B69 /* CryptoSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC9101BF2E26E006B3B69 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ED4DC9501BF2E5D7006B3B69 /* CryptoSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC9121BF2E26E006B3B69 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ED4DC9521BF56EBB006B3B69 /* EventEmitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC9471BF2E596006B3B69 /* EventEmitter.framework */; };
+		ED4DC95A1BFAC662006B3B69 /* StarscreamMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DC9591BFAC662006B3B69 /* StarscreamMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 		ED4DC8FB1BF2D750006B3B69 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		ED4DC9051BF2E26D006B3B69 /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = CryptoSwift/CryptoSwift.xcodeproj; sourceTree = SOURCE_ROOT; };
 		ED4DC9411BF2E595006B3B69 /* EventEmitter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EventEmitter.xcodeproj; path = CryptoSwift/../SwiftEventEmitter/EventEmitter.xcodeproj; sourceTree = SOURCE_ROOT; };
+		ED4DC9591BFAC662006B3B69 /* StarscreamMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarscreamMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 			children = (
 				ED4DC8E81BF2D21B006B3B69 /* SwiftCommandWSTests.swift */,
 				ED4DC8EA1BF2D21B006B3B69 /* Info.plist */,
+				ED4DC9591BFAC662006B3B69 /* StarscreamMock.swift */,
 			);
 			path = SwiftCommandWSTests;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED4DC95A1BFAC662006B3B69 /* StarscreamMock.swift in Sources */,
 				ED4DC8E91BF2D21B006B3B69 /* SwiftCommandWSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
