@@ -21,9 +21,6 @@
 		ED4DC94B1BF2E5D7006B3B69 /* Starscream.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC8F91BF2D741006B3B69 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ED4DC94C1BF2E5D7006B3B69 /* EventEmitter.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC9471BF2E596006B3B69 /* EventEmitter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ED4DC94D1BF2E5D7006B3B69 /* CryptoSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC90E1BF2E26E006B3B69 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ED4DC94E1BF2E5D7006B3B69 /* CryptoSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC9141BF2E26E006B3B69 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		ED4DC94F1BF2E5D7006B3B69 /* CryptoSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC9101BF2E26E006B3B69 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		ED4DC9501BF2E5D7006B3B69 /* CryptoSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC9121BF2E26E006B3B69 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ED4DC9521BF56EBB006B3B69 /* EventEmitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC9471BF2E596006B3B69 /* EventEmitter.framework */; };
 		ED4DC95A1BFAC662006B3B69 /* StarscreamMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DC9591BFAC662006B3B69 /* StarscreamMock.swift */; };
 /* End PBXBuildFile section */
@@ -112,9 +109,6 @@
 				ED4DC94B1BF2E5D7006B3B69 /* Starscream.framework in Copy Frameworks */,
 				ED4DC94C1BF2E5D7006B3B69 /* EventEmitter.framework in Copy Frameworks */,
 				ED4DC94D1BF2E5D7006B3B69 /* CryptoSwift.framework in Copy Frameworks */,
-				ED4DC94E1BF2E5D7006B3B69 /* CryptoSwift.framework in Copy Frameworks */,
-				ED4DC94F1BF2E5D7006B3B69 /* CryptoSwift.framework in Copy Frameworks */,
-				ED4DC9501BF2E5D7006B3B69 /* CryptoSwift.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,6 +611,7 @@
 				ED4DC8EF1BF2D21B006B3B69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED4DC8F01BF2D21B006B3B69 /* Build configuration list for PBXNativeTarget "SwiftCommandWSTests" */ = {
 			isa = XCConfigurationList;
@@ -625,6 +620,7 @@
 				ED4DC8F21BF2D21B006B3B69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
