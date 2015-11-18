@@ -1,6 +1,0 @@
-[submodule "SwiftEventEmitter"]
-	path = SwiftEventEmitter
-	url = https://github.com/FCO/SwiftEventEmitter.git
-[submodule "CryptoSwift"]
-	path = CryptoSwift
-	url = https://github.com/krzyzanowskim/CryptoSwift.git
