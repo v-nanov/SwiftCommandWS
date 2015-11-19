@@ -27,7 +27,7 @@ public class Command : CustomStringConvertible {
 
     let socket      : WebSocket
     let json        : JSON?
-    let data        : JSON?
+    public let data        : JSON?
     let cmd         : String?
     let type        : String?
     let trans_id    : String?

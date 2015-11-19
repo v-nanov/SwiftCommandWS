@@ -11,7 +11,7 @@ import Starscream
 import SwiftyJSON
 import EventEmitter
 
-class CommandWS : EventEmitter {
+public class CommandWS : EventEmitter {
     let socket  : WebSocket
     var cmds    : [String:CommandStruct] = [:]
     
@@ -20,7 +20,7 @@ class CommandWS : EventEmitter {
         let schema  : JSON?
     }
     
-    init(url: NSURL) {
+    public init(url: NSURL) {
 
         socket = WebSocket(url: url)
         super.init()
@@ -71,15 +71,16 @@ class CommandWS : EventEmitter {
         emit("\(cmd.cmd!) \(cmd.trans_id!) \(cmd.type!)", data: cmd)
     }
     
-    func run(cmd: String, data: JSON = nil, cb: (Command -> Void)? = nil) -> Command? {
+    public func run(cmd: String, data: JSON = nil, cb: (Command -> Void)? = nil) -> Command? {
         if let cmdConf = cmds[cmd] {
             let cmd = Command(socket: socket, cmd: cmdConf.name, data: data)
             if cb != nil {
-                once("\(cmd.cmd) \(cmd.trans_id)") {
-                    (cmd : Command) in
+                print("once: \(cmd.cmd!) \(cmd.trans_id!)")
+                once("\(cmd.cmd!) \(cmd.trans_id!)") {
+                    (resp : Command) in
                     print("recebeu")
-                    if cmd.type?.uppercaseString == (Command.flow[cmd.type!]?.uppercaseString)! || (cmd.type?.uppercaseString)! == "ERROR" {
-                        cb!(cmd)
+                    if resp.type?.uppercaseString == (Command.flow[cmd.type!]?.uppercaseString)! || (resp.type?.uppercaseString)! == "ERROR" {
+                        cb!(resp)
                     }
                 }
             }
@@ -89,7 +90,7 @@ class CommandWS : EventEmitter {
         return nil
     }
     
-    func disconnect() {
+    public func disconnect() {
         cmds = [:]
         socket.disconnect()
     }
