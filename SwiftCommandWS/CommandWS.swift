@@ -12,8 +12,13 @@ import SwiftyJSON
 import EventEmitter
 
 public class CommandWS : EventEmitter {
-    let socket  : WebSocket
-    var cmds    : [String:CommandStruct] = [:]
+    let socket              : WebSocket
+    var cmds                : [String:CommandStruct] = [:]
+    public var isConnected  : Bool {
+        get {
+            return socket.isConnected
+        }
+    }
     
     struct CommandStruct {
         let name    : String;
