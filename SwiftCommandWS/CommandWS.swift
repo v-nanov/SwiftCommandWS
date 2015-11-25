@@ -26,7 +26,6 @@ public class CommandWS : EventEmitter {
     }
     
     public init(url: NSURL) {
-
         socket = WebSocket(url: url)
         super.init()
 
@@ -66,7 +65,7 @@ public class CommandWS : EventEmitter {
             self.emit("open")
         }
 
-        socket.connect()
+        connect()
     }
     
     private func receiveRequest(cmd : Command) {
@@ -77,6 +76,9 @@ public class CommandWS : EventEmitter {
     }
     
     public func run(cmd: String, data: JSON = nil, cb: (Command -> Void)? = nil) -> Command? {
+        if !isConnected {
+            connect()
+        }
         if let cmdConf = cmds[cmd] {
             let cmd = Command(socket: socket, cmd: cmdConf.name, data: data)
             if cb != nil {
@@ -93,6 +95,13 @@ public class CommandWS : EventEmitter {
             return cmd
         }
         return nil
+    }
+    
+    public func connect() {
+        if isConnected {
+            disconnect()
+        }
+        socket.connect()
     }
     
     public func disconnect() {
