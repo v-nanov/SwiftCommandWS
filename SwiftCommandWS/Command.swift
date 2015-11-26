@@ -104,7 +104,7 @@ public class Command : CustomStringConvertible {
         data        = localData
     }
     
-    subscript(index : String) -> String? {
+    public subscript(index : String) -> String? {
         get {
             var ret : String?
             switch index {
